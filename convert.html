@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحول - convert.html</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>محول العملات المالي (Convert)</h1>
+        <nav><a href="index.html">← العودة للرئيسية</a></nav>
+    </header>
+
+    <div class="container">
+        <div class="form-group">
+            <label>من (From):</label>
+            <select id="from">
+                <option value="USD">دولار أمريكي (USD)</option>
+                <option value="EUR">يورو (EUR)</option>
+                <option value="EGP">جنية مصري (EGP)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>إلى (To):</label>
+            <select id="to">
+                <option value="EGP">جنية مصري (EGP)</option>
+                <option value="USD">دولار أمريكي (USD)</option>
+                <option value="EUR">يورو (EUR)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>المبلغ (Amount):</label>
+            <input type="number" id="amount" placeholder="أدخل القيمة المراد تحويلها" value="100">
+        </div>
+
+        <button onclick="convertValue()">Convert (تحويل الآن)</button>
+
+        <div id="result" style="margin-top: 25px; padding: 15px; background: #f8fafc; text-align: center; font-size: 18px; font-weight: bold; border-radius: 6px; color: #1e293b;">
+            اضغط تحويل للبدء
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
